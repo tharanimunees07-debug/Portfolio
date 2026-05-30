@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9147F2"></stop>
+      <stop offset="100%" stop-color="#4F8CFF"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Top Bar -->
+  <path d="M120 140
+       L390 140
+       L420 170
+       L360 170
+       L330 210
+       L210 210
+       L210 265
+       L180 295
+       L180 210
+       L90 210
+       Z" fill="url(#gradT)"></path>
+
+  <!-- Stem -->
+  <path d="M240 225
+       L290 225
+       L290 390
+       L210 470
+       L210 300
+       Q210 270 240 225
+       Z" fill="url(#gradT)"></path>
+</svg>
