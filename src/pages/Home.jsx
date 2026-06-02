@@ -75,7 +75,7 @@ const PROJECTS = [
         detailTitle: "Salon Billing & CRM Software",
         detail1: "This Salon CRM project is a complete salon management system developed to simplify daily salon operations. The application includes customer management, appointment scheduling, billing and invoice generation, staff attendance tracking, payroll management, and product/service handling.",
         detail2: "The system helps salon owners manage their business efficiently through an easy-to-use dashboard with real-time data management and responsive UI design.",
-        highlights: ["Real-time dashboard", "Multi-staff support", "Invoice PDF export", "Inventory alerts"], status: "Live", year: "2024",
+        highlights: ["Real-time dashboard", "Multi-staff support", "Invoice PDF export", "Inventory alerts"], status: "Live", year: "2025",
     },
     {
         id: "healthcare", title: "Healthcare Management CRM",
@@ -87,7 +87,7 @@ const PROJECTS = [
         detailTitle: "Premier Health Center Website",
         detail1: "Premier Health Center is a modern healthcare management website developed to provide patients with an easy and seamless online experience.",
         detail2: "The project was developed using Laravel framework with a focus on performance, clean UI design, and user-friendly navigation.",
-        highlights: ["HIPAA-friendly design", "Doctor availability system", "Mobile responsive", "Secure patient data"], status: "Live", year: "2024",
+        highlights: ["HIPAA-friendly design", "Doctor availability system", "Mobile responsive", "Secure patient data"], status: "Live", year: "2026",
     },
     {
         id: "jobs", title: "Job Portal System",
@@ -99,7 +99,7 @@ const PROJECTS = [
         detailTitle: "Humming Jobs Recruitment Platform",
         detail1: "Humming Jobs is a recruitment and job portal platform developed to connect employers and job seekers through a simple and modern interface.",
         detail2: "Built using Laravel with responsive UI, advanced filtering, secure authentication, and efficient database management.",
-        highlights: ["Advanced job filters", "Resume upload", "Employer dashboard", "Email notifications"], status: "Live", year: "2024",
+        highlights: ["Advanced job filters", "Resume upload", "Employer dashboard", "Email notifications"], status: "Live", year: "2025",
     },
     {
         id: "linkus", title: "Linkus",
@@ -123,7 +123,7 @@ const PROJECTS = [
         detailTitle: "FriendZone Social Platform",
         detail1: "FriendZone is a social networking platform developed to help users connect, communicate, and share updates with friends.",
         detail2: "Includes user authentication, profile management, friend requests, messaging system, notifications, and responsive UI.",
-        highlights: ["JWT Auth", "Admin panel", "Push notifications", "Content moderation"], status: "Live", year: "2023",
+        highlights: ["JWT Auth", "Admin panel", "Push notifications", "Content moderation"], status: "Live", year: "2025",
     },
     {
         id: "ffdj", title: "FFDJ",
@@ -136,7 +136,7 @@ const PROJECTS = [
         detail1: "FFDJ is a service marketplace platform where Franchisees and Distributors can register, manage profiles, and publish services for customers.",
         detail2: "Customers can browse available services, contact service providers directly, and access services through a centralized platform with annual subscription and renewal management.",
         highlights: ["Franchise & Distributor Modules", "Annual Subscription Management", "Service Listing Platform", "Role-Based Authentication", "Admin Dashboard", "Customer Engagement System"],
-        status: "Live", year: "2025",
+        status: "Live", year: "2026",
     },
     {
         id: "joydear", title: "Joydear",
@@ -148,9 +148,100 @@ const PROJECTS = [
         detailTitle: "Dear App Communication Platform",
         detail1: "Dear App is a modern communication and social interaction platform for smooth and engaging online experience.",
         detail2: "Developed using Laravel with secure authentication, efficient database management, and interactive frontend design.",
-        highlights: ["Secure messaging", "Profile customization", "Notification system", "Scalable DB"], status: "Live", year: "2023",
+        highlights: ["Secure messaging", "Profile customization", "Notification system", "Scalable DB"], status: "Live", year: "2025",
+    },
+    {
+        id: "gplast", title: "G-Plast",
+        desc: "Corporate manufacturing website and management platform for showcasing injection moulding, die-casting, and industrial engineering services.",
+        url: "https://aegiiz.us/live_gplast",
+        image: "/assets/projects/gplast.png",
+        tags: ["Laravel", "Manufacturing", "CMS"],
+        color: "#0f766e",
+        emoji: "🏭",
+        category: "Manufacturing Industry",
+        type: "Corporate Web Application",
+        technologies: "Laravel, PHP, MySQL, Bootstrap, JavaScript",
+        features: [
+            "Product & Service Management",
+            "Industry Solutions Showcase",
+            "Client Enquiry System",
+            "Responsive Website Design",
+            "Admin Content Management"
+        ],
+        detailTitle: "G-Plast Manufacturing Solutions Platform",
+        detail1: "G-Plast is a leading manufacturing company specializing in tool & die making, injection moulding, pressure die-casting, and precision engineering solutions for multiple industries.",
+        detail2: "Developed and maintained a scalable Laravel-based platform with dynamic content management, service presentation modules, enquiry handling, and responsive user experience.",
+        highlights: [
+            "Industrial service showcase",
+            "Product gallery management",
+            "Customer enquiry system",
+            "Responsive corporate website"
+        ],
+        status: "Live",
+        year: "2026"
+    },
+    {
+        id: "calltruck",
+        title: "Call Truck",
+        desc: "Truck booking and logistics management platform that connects customers with nearby drivers for goods transportation and delivery services.",
+        url: "#",
+        tags: ["Laravel", "Logistics", "Mobile App"],
+        color: "#2563eb",
+        emoji: "🚚",
+        category: "Logistics & Transportation",
+        type: "Truck Booking Platform",
+        technologies: "Laravel, PHP, MySQL, Flutter, Firebase, Reverb WebSocket, REST API",
+        features: [
+            "Customer Truck Booking",
+            "Real-Time Driver Tracking",
+            "Live Trip Management",
+            "Driver & Customer Mobile Apps",
+            "OTP-Based Trip Verification",
+            "Push Notifications",
+            "Admin Management Dashboard"
+        ],
+        detailTitle: "Call Truck Logistics & Transport Management Platform",
+        detail1: "Call Truck is a logistics and transportation platform designed to connect customers with nearby truck drivers for seamless goods transportation. The system supports real-time booking, trip tracking, driver assignment, and delivery management.",
+        detail2: "Developed a scalable Laravel backend with Flutter mobile applications for customers and drivers. Implemented live location tracking, WebSocket-based real-time communication, Firebase push notifications, OTP verification, ride lifecycle management, and admin monitoring tools.",
+        highlights: [
+            "Real-time truck booking system",
+            "Live driver location tracking",
+            "OTP-based trip verification",
+            "Push notification integration",
+            "Driver acceptance & trip management",
+            "Admin monitoring dashboard"
+        ],
+        status: "In Development",
+        year: "2026"
     },
 ];
+
+// ── STATUS BADGE ──
+const getStatusBadge = (status) => {
+    const styles = {
+        "Live": {
+            background: "rgba(22,163,74,0.08)",
+            border: "1px solid rgba(22,163,74,0.25)",
+            color: "#16a34a",
+        },
+        "In Development": {
+            background: "rgba(234,179,8,0.08)",
+            border: "1px solid rgba(234,179,8,0.25)",
+            color: "#ca8a04",
+        },
+    };
+    const style = styles[status] || {
+        background: "rgba(100,100,100,0.08)",
+        border: "1px solid rgba(100,100,100,0.25)",
+        color: "#666",
+    };
+    const dot = status === "Live" ? "● " : "◐ ";
+    return (
+        <span style={{ ...style, borderRadius: 999, padding: "4px 12px", fontSize: 11.5, fontWeight: 700, letterSpacing: ".06em" }}>
+            {dot}{status}
+        </span>
+    );
+};
 
 // Project screenshot using microlink API (free, no key needed)
 function ProjectImage({ url, color, emoji, title }) {
@@ -159,7 +250,6 @@ function ProjectImage({ url, color, emoji, title }) {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        // Use microlink.io free screenshot API
         const screenshotUrl = `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`;
         setImgSrc(screenshotUrl);
     }, [url]);
@@ -187,7 +277,6 @@ function ProjectImage({ url, color, emoji, title }) {
                     }}
                 />
             )}
-            {/* Fallback / loading state */}
             {(!loaded || error) && (
                 <div style={{
                     position: "absolute", inset: 0,
@@ -195,10 +284,9 @@ function ProjectImage({ url, color, emoji, title }) {
                     alignItems: "center", justifyContent: "center", gap: 10,
                     background: `linear-gradient(135deg, ${color}18 0%, ${color}06 100%)`,
                 }}>
-                    {/* Browser chrome mockup */}
                     <div style={{ width: "85%", background: "rgba(255,255,255,0.12)", borderRadius: 10, overflow: "hidden", border: `1px solid ${color}30` }}>
                         <div style={{ background: "rgba(0,0,0,0.15)", padding: "7px 12px", display: "flex", alignItems: "center", gap: 6 }}>
-                            {["#ff5f57","#febc2e","#28c840"].map(c => (
+                            {["#ff5f57", "#febc2e", "#28c840"].map(c => (
                                 <div key={c} style={{ width: 8, height: 8, borderRadius: "50%", background: c, opacity: 0.8 }} />
                             ))}
                             <div style={{ flex: 1, background: "rgba(255,255,255,0.15)", borderRadius: 4, height: 16, marginLeft: 8, display: "flex", alignItems: "center", paddingLeft: 8 }}>
@@ -213,7 +301,6 @@ function ProjectImage({ url, color, emoji, title }) {
                     </div>
                 </div>
             )}
-            {/* Overlay gradient at bottom for smooth card transition */}
             <div style={{
                 position: "absolute", bottom: 0, left: 0, right: 0, height: 40,
                 background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.05))",
@@ -288,7 +375,8 @@ function DetailPage({ project, onBack }) {
                         <div>
                             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 10, flexWrap: "wrap" }}>
                                 <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 800, color: "var(--text1)", letterSpacing: "-0.03em", lineHeight: 1.15, fontSize: "clamp(1.6rem,4vw,2.4rem)" }}>{project.title}</h1>
-                                <span style={{ background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.35)", color: "#22c55e", borderRadius: 999, padding: "4px 12px", fontSize: 12, fontWeight: 700, letterSpacing: ".04em" }}>● LIVE</span>
+                                {/* ── STATUS BADGE (Detail Page) ── */}
+                                {getStatusBadge(project.status)}
                             </div>
                             <p style={{ color: "var(--text3)", fontSize: 15, lineHeight: 1.7, maxWidth: 560 }}>{project.desc}</p>
                         </div>
@@ -298,7 +386,6 @@ function DetailPage({ project, onBack }) {
             <div className="container" style={{ padding: "52px 24px 80px" }}>
                 <div className="detail-grid" style={{ display: "grid", gap: 36, alignItems: "start" }}>
                     <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
-                        {/* Live screenshot in detail page */}
                         <div style={{ borderRadius: 20, overflow: "hidden", border: `1px solid ${project.color}28` }}>
                             <ProjectImage url={project.url} color={project.color} emoji={project.emoji} title={project.title} />
                             <div style={{ background: "var(--bg)", borderTop: `1px solid ${project.color}20`, padding: "10px 16px", display: "flex", alignItems: "center", gap: 8 }}>
@@ -392,7 +479,7 @@ export default function Portfolio() {
     const [hirePulse, setHirePulse] = useState(false);
 
     useEffect(() => {
-        const words = ["Developer", "Laravel Expert", "Backend Engineer", "API Builder"];
+        const words = ["Developer", "Laravel Expert", "Backend Developer", "API Builder"];
         let wi = 0, ci = 0, deleting = false;
         const tick = () => {
             const word = words[wi];
@@ -487,7 +574,6 @@ export default function Portfolio() {
         a { text-decoration: none; color: inherit; }
         section { padding: 96px 0; }
 
-        /* ── FULL WIDTH CONTAINER FIX ── */
         .container {
           width: 100%;
           max-width: 1280px;
@@ -568,7 +654,6 @@ export default function Portfolio() {
         .stagger-3 { animation-delay: .38s; opacity: 0; }
         .stagger-4 { animation-delay: .55s; opacity: 0; }
 
-        /* ── NAVBAR (aligned with container) ── */
         .topnav {
           position: fixed; top: 0; left: 0; right: 0; z-index: 200;
           height: var(--nav-height);
@@ -652,7 +737,6 @@ export default function Portfolio() {
         }
         .topnav.scrolled .mob-menu-btn { background: var(--accent-light); border-color: var(--border-c); color: var(--accent); }
 
-        /* ── HERO ── */
         .hero-section {
           min-height: 100vh; display: flex; align-items: center;
           background: linear-gradient(160deg, var(--hero-bg) 0%, var(--hero-bg2) 45%, #6b21a8 75%, #7e22ce 100%);
@@ -704,7 +788,6 @@ export default function Portfolio() {
           box-shadow: 0 0 0 4px rgba(124,58,237,0.15);
         }
 
-        /* ── PROJECT CARD with image ── */
         .project-card {
           background: var(--surface); border: 1.5px solid var(--border-c);
           border-radius: 20px; overflow: hidden;
@@ -731,7 +814,11 @@ export default function Portfolio() {
           .available-badge { display: none; }
           .mob-menu-btn { display: flex; }
         }
+        @media (max-width: 1024px) {
+          .resume-three-col { grid-template-columns: 1fr 1fr !important; }
+        }
         @media (max-width: 768px) {
+          .resume-three-col { grid-template-columns: 1fr !important; }
           .two-col, .about-grid, .detail-grid, .contact-grid { grid-template-columns: 1fr !important; }
           section { padding: 72px 0; }
           .section-title { margin-bottom: 48px; }
@@ -832,7 +919,7 @@ export default function Portfolio() {
                             </div>
 
                             <div className="animate-fade-up stagger-4" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-                                {[["1.8+", "Years Experience"], ["7+", "Live Projects"], ["4+", "Industries Served"]].map(([n, l]) => (
+                                {[["2+", "Years Experience"], ["7+", "Live Projects"], ["4+", "Industries Served"]].map(([n, l]) => (
                                     <div key={l} className="stat-chip">
                                         <div className="num">{n}</div>
                                         <div className="lbl">{l}</div>
@@ -863,7 +950,7 @@ export default function Portfolio() {
                                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", fontWeight: 800, color: "var(--text1)", marginBottom: 16 }}>Building the web's backbone — one API at a time.</h3>
                                     <p style={{ color: "#5b21b6", lineHeight: 1.9, marginBottom: 30, fontSize: 16 }}>I am a dedicated Laravel Backend Developer with experience in developing secure, scalable, and efficient web applications. Passionate about backend architecture, API development, database management, and performance optimization with a strong focus on clean and maintainable code.</p>
                                     <div className="two-col" style={{ display: "grid", gap: "16px 32px" }}>
-                                        {[["Location", "Ramanathapuram, TN"], ["Phone", "+91 90806 75142"], ["Degree", "B.Sc. Computer Science"], ["Email", "tharanimunees07@gmail.com"], ["Experience", "1.8 Years"], ["LinkedIn", "tharani-t-2729b422b"]].map(([k, v]) => (
+                                        {[["Location", "Ramanathapuram, TN"], ["Phone", "+91 90806 75142"], ["Degree", "B.Sc. Computer Science"], ["Email", "tharanimunees07@gmail.com"], ["Experience", "2 Years"], ["LinkedIn", "tharani-t-2729b422b"]].map(([k, v]) => (
                                             <div key={k} style={{ fontSize: 14 }}>
                                                 <span style={{ color: "var(--text3)", fontWeight: 700, letterSpacing: ".04em", fontSize: 11.5, textTransform: "uppercase" }}>{k}</span>
                                                 <div style={{ color: "var(--text1)", fontWeight: 500, marginTop: 3, fontSize: 15 }}>{v}</div>
@@ -913,7 +1000,8 @@ export default function Portfolio() {
                                 <h2>Resume</h2>
                                 <p>Passionate Laravel Backend Developer with experience in secure, scalable, and high-performance web applications.</p>
                             </div>
-                            <div className="two-col" style={{ display: "grid", gap: 44 }}>
+                            {/* Education + Experience: 2 col */}
+                            <div className="two-col" style={{ display: "grid", gap: 44, marginBottom: 52 }}>
                                 <div>
                                     <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 30 }}>
                                         <div style={{ width: 40, height: 40, borderRadius: 11, background: "var(--accent-light)", border: "1.5px solid rgba(124,58,237,.25)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18 }}>🎓</div>
@@ -957,14 +1045,38 @@ export default function Portfolio() {
                                     ))}
                                 </div>
                             </div>
+
+                            {/* ── ACHIEVEMENTS: full width, 4-col cards ── */}
+                            <div>
+                                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 28 }}>
+                                    <div style={{ width: 40, height: 40, borderRadius: 11, background: "var(--accent-light)", border: "1.5px solid rgba(124,58,237,.25)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18 }}>🏆</div>
+                                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: 18, fontWeight: 800, color: "var(--text1)" }}>Achievements</h3>
+                                </div>
+                                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
+                                    {[
+                                        { icon: "🚀", label: "4+ Apps", text: "Developed and maintained production-level web applications." },
+                                        { icon: "🔌", label: "30+ APIs", text: "Built and integrated REST APIs for web and mobile platforms." },
+                                        { icon: "⚡", label: "Performance", text: "Optimized database queries and improved app performance." },
+                                        { icon: "🔐", label: "Security", text: "Implemented secure auth and role-based access control systems." },
+                                    ].map((item, i) => (
+                                        <div key={i} style={{ background: "var(--surface)", border: "1px solid var(--border-c)", borderRadius: 16, padding: "22px 20px", display: "flex", flexDirection: "column", gap: 12, boxShadow: "0 2px 12px rgba(124,58,237,0.05)", transition: "border-color .2s, transform .2s, box-shadow .2s" }}
+                                            onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--accent2)"; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 8px 28px rgba(124,58,237,0.12)"; }}
+                                            onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border-c)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 2px 12px rgba(124,58,237,0.05)"; }}>
+                                            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                                                <div style={{ width: 40, height: 40, borderRadius: 11, background: "var(--accent-light)", border: "1.5px solid rgba(124,58,237,.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0 }}>{item.icon}</div>
+                                                <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 15, color: "var(--accent)" }}>{item.label}</span>
+                                            </div>
+                                            <p style={{ color: "#5b21b6", fontSize: 13.5, lineHeight: 1.75, margin: 0 }}>{item.text}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </section>
 
                     {/* ── PORTFOLIO ── */}
                     <section id="portfolio" style={{ background: "var(--surface-2)" }}>
-                        
                         <div className="container">
-                        
                             <div className="section-title">
                                 <div className="eyebrow">My Work</div>
                                 <h2>Portfolio</h2>
@@ -975,12 +1087,12 @@ export default function Portfolio() {
                                     <div key={p.id} className="project-card"
                                         style={{ borderTop: `4px solid ${p.color}` }}
                                         onClick={() => { setSelectedProject(p); window.scrollTo(0, 0); }}>
-                                        {/* Screenshot image at top */}
                                         <ProjectImage url={p.url} color={p.color} emoji={p.emoji} title={p.title} />
                                         <div className="project-card-body">
                                             <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", marginBottom: 14 }}>
                                                 <div style={{ width: 44, height: 44, borderRadius: 12, background: `${p.color}12`, border: `1.5px solid ${p.color}30`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20 }}>{p.emoji}</div>
-                                                <span style={{ background: "rgba(22,163,74,0.08)", border: "1px solid rgba(22,163,74,0.25)", color: "#16a34a", borderRadius: 999, padding: "4px 12px", fontSize: 11.5, fontWeight: 700, letterSpacing: ".06em" }}>● LIVE</span>
+                                                {/* ── STATUS BADGE (Project Card) ── */}
+                                                {getStatusBadge(p.status)}
                                             </div>
                                             <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, color: "var(--text1)", fontSize: 17, marginBottom: 8 }}>{p.title}</div>
                                             <p style={{ color: "#5b21b6", fontSize: 14, lineHeight: 1.8, marginBottom: 16, flex: 1 }}>{p.desc}</p>
